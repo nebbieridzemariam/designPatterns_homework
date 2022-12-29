@@ -3,8 +3,6 @@ import Steps.Config;
 import Steps.DashboardSteps;
 import Steps.PracticeFormsSteps;
 import Steps.SubmitFormsSteps;
-import com.codeborne.selenide.Configuration;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class FillInFormTest extends DataClass {
