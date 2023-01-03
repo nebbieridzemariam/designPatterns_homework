@@ -13,7 +13,7 @@ public class DashboardSteps extends DashboardPage {
         return this;
     }
 
-    @Step
+    @Step("asd")
     public DashboardSteps clickOnFormsButton(){
 
         formsButton.scrollTo();

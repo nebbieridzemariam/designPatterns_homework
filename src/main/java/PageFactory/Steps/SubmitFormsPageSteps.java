@@ -12,25 +12,25 @@ public class SubmitFormsPageSteps extends SubmitFormsPage {
         super(driver);
     }
 
-    @Step
+    @Step("Validate  'Thanks for submitting the form' text")
     public SubmitFormsPageSteps validateThankYouText() {
         Assert.assertEquals(submitFormText.getText(), "Thanks for submitting the form");
         return this;
     }
 
-    @Step
+    @Step("Validate input name")
     public SubmitFormsPageSteps validateName() {
         Assert.assertEquals(studentName.getText(), DataClass.name + " " + DataClass.lastName);
         return this;
     }
 
-    @Step
+    @Step("Validate selected gender")
     public SubmitFormsPageSteps validateGender() {
         Assert.assertEquals(studentGender.getText(), DataClass.gender);
         return this;
     }
 
-    @Step
+    @Step("Validate input number")
     public SubmitFormsPageSteps validateNumber() {
         Assert.assertEquals(studentPhoneNumber.getText(), DataClass.phoneNumber);
         return this;

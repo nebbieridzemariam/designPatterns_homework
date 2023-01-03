@@ -14,50 +14,50 @@ public class PracticeFormsPageSteps extends PracticeFormsPage {
         js = (JavascriptExecutor) driver;
     }
 
-    @Step
+    @Step("Clicking on practice form")
     public PracticeFormsPageSteps clickOnPracticeForm() {
         practiceForm.click();
         return this;
     }
 
-    @Step
+    @Step("Inputting the name: {0}")
     public PracticeFormsPageSteps nameInput(String name) {
         firstName.sendKeys(name);
         return this;
     }
 
-    @Step
+    @Step("Inputting the last name: {0}")
     public PracticeFormsPageSteps lastNameInput(String lastName) {
         lastNameFill.sendKeys(lastName);
         return this;
     }
 
-    @Step
+    @Step("Selecting gender")
     public PracticeFormsPageSteps selectGenderFemale() {
         genderOption.click();
         return this;
     }
 
-    @Step
+    @Step("Inputting phone number: {0}")
     public PracticeFormsPageSteps fillPhoneNumber(String phoneNumber) {
         phoneNumberInput.sendKeys(phoneNumber);
         return this;
 
     }
 
-    @Step
+    @Step("Removing ads")
     public PracticeFormsPageSteps removeAds() {
         js.executeScript("return arguments[0].remove();", ads);
         return this;
     }
 
-    @Step
+    @Step("Deleting footer")
     public PracticeFormsPageSteps deleteFooter() {
         js.executeScript("return arguments[0].remove();", footer);
         return this;
     }
 
-    @Step
+    @Step("Clicking submit button")
     public PracticeFormsPageSteps submitButtonClick() {
         js.executeScript("arguments[0].scrollIntoView();", submitButton);
         submitButton.click();

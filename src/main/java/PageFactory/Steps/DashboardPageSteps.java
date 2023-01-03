@@ -14,7 +14,7 @@ public class DashboardPageSteps extends DashboardPage {
         js = (JavascriptExecutor) driver;
     }
 
-    @Step
+    @Step("Clicking on forms button")
     public DashboardPageSteps clickOnFormsButton() {
 
         js.executeScript("arguments[0].scrollIntoView();", formsButton);
