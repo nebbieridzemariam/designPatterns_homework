@@ -9,11 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 public class DashboardPage {
     private WebDriver driver;
     JavascriptExecutor js;
-    private static String PAGE_URL = "https://demoqa.com/";
+//    private static String PAGE_URL = "https://demoqa.com/";
 
     public DashboardPage(WebDriver driver) {
         this.driver = driver;
-        driver.get(PAGE_URL);
         PageFactory.initElements(driver, this);
         js = (JavascriptExecutor) driver;
 
